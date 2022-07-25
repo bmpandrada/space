@@ -631,12 +631,12 @@ width: 390px;
 }
 .astro{
     width: 150px;
-    margin-left: 3em;
- 
+    margin: 0;
 }
 .spaceship{
 width: 290px;
 z-index: 2;
+margin-left: -9em;
 margin-top: -7em;
 }
 .about-container .max-width{
@@ -681,11 +681,6 @@ margin-top: -7em;
  }
  .home-left{
   width: 100%;
-  height: 100vh;
-  /* border: 1px solid red; */
- 
-
-
  }
  .home-left .moon{
  width: 360px;
