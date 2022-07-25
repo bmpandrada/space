@@ -354,7 +354,7 @@ caf0f8 - light
     justify-content: space-between;
     box-sizing: border-box;
     background-attachment: fixed;
-    background-image: linear-gradient(#03055e2d, #023e8a), url('pics/earth-g4abfeb622_1920.jpg');    
+    background-image: linear-gradient(#03055e2d, #023e8a), url('/pics/earth-g4abfeb622_1920.jpg');    
 }
 
 .home-right .content{
@@ -539,7 +539,7 @@ caf0f8 - light
   background-attachment: fixed;
 }
 .expertise .max-width{
-  background-image: linear-gradient(#023e8a,#03055e2d ), url('pics/eart.jpg');  
+  background-image: linear-gradient(#023e8a,#03055e2d ), url('/pics/eart.jpg');  
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -671,12 +671,16 @@ margin-top: -7em;
  }
  .about-container .colum-left lottie-player{
     width: 100%;
+
  } 
- .colum-left{
+ .about-container .colum-left{
   
   width: 100%;
-  margin: -10em 0;
- position: relative;
+  margin: -15em 0;
+  margin-bottom: 1em;
+  position: relative;
+  
+
 
  }
  .home-left{
