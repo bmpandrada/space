@@ -644,6 +644,8 @@ margin-top: -7em;
     justify-content: center;
     align-items: center;
     padding:.5em;
+    width: 100%;
+    box-sizing: border-box;
 }
 .about-flex{
     width: 100%;
