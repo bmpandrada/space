@@ -626,7 +626,7 @@ width: 390px;
     display: flex;
     justify-content: space-around;
     flex-direction: column-reverse;
-   padding: 0;
+   padding-top: 10em;
    
 }
 .astro{
