@@ -425,7 +425,7 @@ caf0f8 - light
 }
 .astro{
     position: absolute;
-    width: 280px;
+    width: 300px;
     margin-left: 1em;
     margin-top: 15em;
     animation: floating 4s infinite;
@@ -459,8 +459,7 @@ caf0f8 - light
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    
-    
+    flex-wrap: wrap;
 }
 
 .spaceship{
@@ -475,159 +474,201 @@ caf0f8 - light
   width: 250px;
   transition: 0.8s ease-in-out;
 }
-
-
-
 .about-container .colum-left{
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+position: relative;
+width: 50%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
 }
 .about-container .colum-left lottie-player{
-    width: 80%;
-    position: relative;
+width: 80%;
+position: relative;
 }
 .lot{
-    position: relative;
-    margin-top: 10em;
+position: relative;
+margin-top: 10em;
 }
 .avatar{
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    border-radius: 50em ;
+bottom: 0;
+position: absolute;
+width: 100%;
+border-radius: 50em ;
 }
 .about-container .right .more {
-    display: none;
-    margin: 1em 0;
+display: none;
+margin: 1em 0;
 }
 
 .about-container .right .more.active {
-    display: block;
+display: block;
 }
 .text{
-    color:#9461b6;
-    text-transform: uppercase;
-    font-size: 2.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color:#9461b6;
+text-transform: uppercase;
+font-size: 2.5em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .about-container p, .more{
-    color: #ade8f4;
-    font-size: 1.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #ade8f4;
+font-size: 1.5em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .readmore{
-    color: #caf0f8;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #caf0f8;
+text-decoration: none;
+text-transform: uppercase;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*expertise start here..*/
 .expertise .max-width{
-  height: 100vh;
-  width: 100%;
-  background-color: #023e8a;
-  margin: 0 auto;
-  padding: 0 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-attachment: fixed;
+height: auto;
+width: 100%;
+background-color: #023e8a;
+margin: 0 auto;
+padding: 0 5em;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+background-attachment: fixed;
+flex-wrap: wrap;
+background-image: linear-gradient(#023e8a,#03055e2d ), url('pics/eart.jpg');  
 }
-.expertise .max-width{
-  background-image: linear-gradient(#023e8a,#03055e2d ), url('pics/eart.jpg');  
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  ;
+.expertise-title{
+  margin-top: 2em;
+  color:#9461b6;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.expertis-div ul{
+  display: flex;
+  padding: 5em;
+  align-items: center;
+  justify-content: center;
+}
+.expertis-div ul li{
+  box-shadow: 0 0 1px 5px #fff;
+  color: #9461b6;
+  padding: 1.5em;
+  font-size: 12px;
+  width:auto;
+  background-color: #ade8f4;
+  margin: 1em;
+  border-radius: 5px;
+  text-align: justify;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.expertis-div li:nth-child(1){
+  animation: floating  10s infinite;
+}
+.expertis-div li:nth-child(2){
+  animation: floating2  10s infinite;
+}
+.expertis-div li:nth-child(3){
+  animation: floating  10s infinite;
+}
+.expertis-div li:nth-child(4){
+  animation: floating2  10s infinite;
+}
+
+@keyframes floating2 {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, -25px); }
+  to   { transform: translate(0, 0px); }    
+}
+
+.expertis-div ul li img{
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 1em;
+}
 /*footer and media query start here..*/
 footer{
-    background-color: #000000;
-    height: 90px;
-    color: beige;
-    z-index: 99;
-  }
+background-color: #000000;
+height: 90px;
+color: beige;
+z-index: 99;
+}
   
 /* responsive Media Query */
   
 @media (max-width: 1920px) {
    
 .menu-btn {
-    display: none;
-    z-index: 999;
-    }
-  }
+display: none;
+z-index: 999;
+}
+
+}
   
 @media (max-width: 1104px) {
-  
-  }
+
+}
   
 @media (max-width: 991px) {
   
 .menu-btn {
-    display: none;
-    z-index: 999;
-    }
-  }
-  
+display: none;
+z-index: 999;
+}
+}
 @media (max-width: 947px) {
 .menu-btn {
-    display: block;
-    z-index: 999;
-    }
+display: block;
+z-index: 999;
+}
+
 .navbar .menu {
-    position: fixed;
-    height: 80vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    opacity: 80%;
-    text-align: center;
-    padding-top: 6em;
-    transition: all 0.4s ease;
-    }
+position: fixed;
+height: 80vh;
+width: 100%;
+left: -100%;
+top: 0;
+opacity: 80%;
+text-align: center;
+padding-top: 6em;
+transition: all 0.4s ease;
+}
 .navbar .menu.active {
-    left: 0;
-    }
+left: 0;
+}
 .navbar .menu li {
-    display: block;
-    }
+display: block;
+}
 .navbar .menu li a {
-    display: inline-block;
-    margin: 1.5rem;
-    font-size: 1.8;
-    }
+display: inline-block;
+margin: 1.5rem;
+font-size: 1.8;
+}
 .navbar .menu li a:hover {
-    transform: scale(1.3);
-    }
+transform: scale(1.3);
+}
 .home-container .max-width{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
+display: flex;
+justify-content: space-around;
+flex-direction: column-reverse;
 }
 .astro{
-    width: 280px;
-    margin-left: -9em;
+width: 280px;
+margin-left: -9em;
 }
 .spaceship{
 width: 390px;
 }
 @media (max-width: 690px) {
 .home-container .max-width{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-   padding-top: 10em;
-   
+display: flex;
+justify-content: space-around;
+flex-direction: column-reverse;
+padding: 0;
+padding-top: 10em;
+height: auto;
 }
 .astro{
     width: 150px;
@@ -640,67 +681,101 @@ margin-left: -9em;
 margin-top: -7em;
 }
 .about-container .max-width{
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    padding:.5em;
-    width: 100%;
-    box-sizing: border-box;
+flex-direction: column-reverse;
+justify-content: flex-start;
+align-items: flex-start;
+padding:1em 1em;
+width: 100%;
+box-sizing: border-box;
+height: auto;
 }
 .about-flex{
-    width: 100%;
+width: 100%;
 }
 .about-flex .right{
-  width: 100%;
-  font-size: 12px;
-  padding: 0 2em;
-  align-items: flex-start;
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: column;
-  z-index: 3;
-  position: relative;
-  box-sizing: border-box;
+width: 100%;
+font-size: 12px;
+padding: 5em 2em;
+display: flex;
+flex-direction: column;
+z-index: 3;
+position: relative;
+box-sizing: border-box;
 }
 .more{
-  width: auto;
- 
+width: auto;
+}
+.about-container .colum-left lottie-player{
+width: 100%;
+top: 0;
+} 
+.about-container .colum-left{
+width: 100%;
+height: auto;
+top: 0;
+margin: -12.5em 0 0 0;
+padding: 0;
+position: relative;
+}
+.home-left{
+width: 100%;
+}
+.home-left .moon{
+width: 360px;
+}
+.home-right .content{
+font-size: 2.5em;
 }
 
- .lot img{
-    width: 100%;
+footer
+{
+font-size: .5em;
+text-align: center;
+}
+.expertise .max-width{
+  height: auto;
+  width: 100%;
+  background-color: #023e8a;
+  margin: 0 auto;
+  padding: 0 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  border: none;
+
+  }
+  .expertise-title{
+    color: #8900e4;
+    font-size: 3em;
+  }
+  .expertis-div ul{
+    display: flex;
+    padding: 5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
- }
- .about-container .colum-left lottie-player{
-    width: 100%;
-
- } 
- .about-container .colum-left{
-  
-  width: 100%;
-  margin: -15em 0;
-  margin-bottom: 1em;
-  position: relative;
-  
-
-
- }
- .home-left{
-  width: 100%;
- }
- .home-left .moon{
- width: 360px;
-
- }
- .home-right .content{
-  font-size: 2.5em;
- 
- }
- footer{
-  font-size: .5em;
-  text-align: center;
- }
-
+  }
+  .expertis-div ul li{
+    color: #9461b6;
+    padding: 2.5em;
+    background-color: #ade8f4;
+    margin: 3em 0;
+    width: 160px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .expertis-div ul li img{
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 1em;
+  }
 }
   
 @media (max-width: 500px) {
