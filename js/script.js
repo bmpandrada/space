@@ -126,8 +126,6 @@ $(document).ready(function () {
       }
   
   
-     
-  
   
       if (this.scrollY > 20) {
         $(".navbar .menu li a").addClass("sticky");
