@@ -536,16 +536,16 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 1em;
-height: 100vh;
+height: auto;
 }
 .home-container .home-left{
   padding-top: 15em;
 }  
 .moon{
-  width:400px;
+  width:300px;
 }
 .astro{
-  width: 320px;
+  width: 220px;
 }
 .home-right{
   width:100%;
