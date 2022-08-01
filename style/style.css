@@ -383,7 +383,7 @@ caf0f8 - light
   justify-content: center;
   align-items: center;
   gap: 1em;
-  height: 100vh;
+  height: auto;
   position: relative;
 }
 .avatars{
