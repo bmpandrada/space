@@ -548,8 +548,8 @@ height: auto;
   width: 220px;
 }
 .home-right{
-  width:100%;
-  padding-top: 15em;
+  width:auto;
+  padding:15em;
 }
 
 /*about mobile size*/
