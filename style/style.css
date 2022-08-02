@@ -98,11 +98,21 @@ caf0f8 - light
   border: 1px solid blue;
   width: auto;
 }
+
 /*about mobile size*/
 
 /*expertise*/
 }
-@media (max-width: 500px) {         
+@media (max-width: 500px) {  
+  .moon{
+  width: 320px;
+}
+.astro{
+  width:295px;
+}
+.home-right .content{
+  font-size:2em ;
+}       
 }     
 @media (max-width: 375px){
 }
