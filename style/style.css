@@ -114,4 +114,10 @@ caf0f8 - light
 }       
 }     
 @media (max-width: 375px){
+  .moon{
+    width: 300px;
+  }
+  .astro{
+    width:240px;
+  }
 }
