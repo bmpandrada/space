@@ -50,11 +50,10 @@ caf0f8 - light
 }
 .home-left, .home-right{
   border: 1px solid blue;
-  width: auto;
 }
 .home-left{
   display: flex;
-  width: 50%;
+  width: 100%;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -96,7 +95,7 @@ caf0f8 - light
 }
 .home-left, .home-right{
   border: 1px solid blue;
-  width: auto;
+  width: 100%;
 }
 
 /*about mobile size*/
