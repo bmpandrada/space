@@ -332,10 +332,9 @@ caf0f8 - light
     justify-content: center;
     align-items: center;
     gap: 5em;
-    height: auto;
+    height: 100vh;
 }
 .home-left{
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,7 +352,7 @@ caf0f8 - light
   to   { transform: rotate( 360deg); }    
 }
 .astro{
-  position:absolute;
+  position:                                                                                                                             olute;
   animation: floating 3s infinite;
   width: 350px;
   z-index: 1;
@@ -384,10 +383,8 @@ caf0f8 - light
   align-items: center;
   gap: 1em;
   height: 100vh;
-  position: relative;
 }
 .avatars{
-  position: relative;
   border-radius:  0 10em  100em 0;
 }
 .colum-left{
