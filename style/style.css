@@ -383,7 +383,7 @@ caf0f8 - light
   justify-content: center;
   align-items: center;
   gap: 1em;
-  height: auto;
+  height: 100vh;
   position: relative;
 }
 .avatars{
@@ -534,18 +534,20 @@ display: flex;
 margin: 0 auto;
 justify-content: center;
 align-items: center;
-flex-direction: row;
+flex-direction: column;
 gap: 1em;
 height: auto;
 }
 .home-container .home-left{
   padding-top: 15em;
+  border: 1px solid red;
+  margin: 15em 0;
 }  
 .moon{
   width:300px;
 }
 .astro{
-  width: 220px;
+  width: 215px;
 }
 .home-right{
   width:auto;
